@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+:root{
+  --text-color-main: #222;
+  --text-color-1: #353535;
+  --link-color-hover: #b59677;
+  --link-color-hover-light: #ceab89;
+  --gray-light: #979797;
+  --gray-light-1: #bbbaba;
+  --gray-light-2: #faf9f9;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.page{
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.loading, .error{
+  height: calc(100vh - 5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading h1, .error h1{
+  font-size: 3rem;
+  color: var(--text-color-main);
+}
+.cart-wishlist-title{
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  color: var(--text-color-main);
+}
+.no-items-yet{
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 4rem 0;
+  color: var(--text-color-main);
+}
+@media screen and (max-width:850px) {
+  .container{
+    width: 85%;
+  }
+}
+@media screen and (max-width:600px) {
+  .container{
+    width: 90%;
+  }
+
+}
